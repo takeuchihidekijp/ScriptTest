@@ -13,10 +13,9 @@ public class Test : MonoBehaviour {
             Debug.Log(array[i]);
         }
 
-        for(int j =0; j < array.Length; j++)
+        for(int j = array.Length-1; j >= 0; j--)
         {
-            int k = (array.Length -1 ) - j ;
-            Debug.Log(array[k]);
+            Debug.Log(array[j]);
         }
 		 
 	}
