@@ -6,18 +6,18 @@ public class Test : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        int[] points = new int[5];
+        int[] array = { 10, 20, 30, 40, 50 };
 
-        points[0] = 20;
-        points[1] = 10;
-        points[2] = 30;
-        points[3] = 10;
-        points[4] = 80;
-
-        for (int i = 0; i < 5; i++)
+        for(int i =0; i < array.Length; i++)
         {
-            Debug.Log(points[i]);
-        } 
+            Debug.Log(array[i]);
+        }
+
+        for(int j =0; j < array.Length; j++)
+        {
+            int k = (array.Length -1 ) - j ;
+            Debug.Log(array[k]);
+        }
 		 
 	}
 	
